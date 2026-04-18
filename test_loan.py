@@ -10,7 +10,7 @@ def client():
 def test_home(client):
     resp = client.get("/")
     assert resp.status_code == 200
-    assert resp.text == "<h1>Welcome to the Loan API!</h1>"
+    assert resp.text == "<h1>Welcome to the Loan API V2!</h1>"
 
 
 def test_predict_million(client):
